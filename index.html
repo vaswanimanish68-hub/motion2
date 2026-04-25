@@ -1,0 +1,2244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cosmic Healer Deepali — Reiki Grand Master & Spiritual Guide</title>
+<meta name="description" content="Cosmic Healer Deepali Khanna — 11 years of devotion to Reiki, Crystal, Tarot, Bach Flower healing & Reiki teaching from Basic to Grand Master.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ============== RESET & BASE ============== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --pink: #f8d7e3;
+  --lavender: #e6e6fa;
+  --pink-deep: #f2b8cf;
+  --lav-deep: #c8c8f0;
+  --gold: #d4af7a;
+  --gold-soft: #e9d3a8;
+  --ink: #4a3a52;
+  --ink-soft: #7a6c82;
+  --white: #ffffff;
+  --whatsapp: #25d366;
+  --glass: rgba(255, 255, 255, 0.55);
+  --glass-border: rgba(255, 255, 255, 0.6);
+  --shadow-soft: 0 20px 60px rgba(180, 140, 180, 0.18);
+  --shadow-glow: 0 0 60px rgba(248, 215, 227, 0.6);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--ink);
+  background: linear-gradient(180deg, #fff8fb 0%, #f5f0fa 50%, #fff8fb 100%);
+  line-height: 1.65;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: var(--ink);
+}
+
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+button { font-family: inherit; }
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+/* ============== PAGE LOADER ============== */
+.loader {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  background: linear-gradient(135deg, #fff5f8, #f4eeff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+.loader.hidden { opacity: 0; visibility: hidden; }
+.loader-mandala {
+  width: 120px;
+  height: 120px;
+  animation: spin 4s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ============== NAV ============== */
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  padding: 16px 0;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  background: rgba(255, 255, 255, 0.55);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  transition: all 0.35s ease;
+}
+.nav.scrolled { padding: 10px 0; box-shadow: 0 6px 24px rgba(180, 140, 180, 0.08); }
+.nav-inner { display: flex; align-items: center; justify-content: space-between; }
+.brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.35rem;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  line-height: 1.1;
+}
+.brand-text { display: flex; flex-direction: column; }
+.brand-text small {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-size: 0.6rem;
+  letter-spacing: 3px;
+  color: var(--gold);
+  text-transform: uppercase;
+}
+.brand-mark {
+  width: 38px; height: 38px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--pink), var(--lavender));
+  box-shadow: 0 0 18px rgba(212, 175, 122, 0.5);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  animation: glow 3s ease-in-out infinite;
+}
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 18px rgba(212, 175, 122, 0.5); }
+  50% { box-shadow: 0 0 30px rgba(212, 175, 122, 0.8); }
+}
+.nav-links { display: flex; gap: 30px; list-style: none; }
+.nav-links a {
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  position: relative;
+  transition: color 0.3s;
+}
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  left: 0; bottom: -6px;
+  width: 0; height: 1px;
+  background: var(--gold);
+  transition: width 0.3s ease;
+}
+.nav-links a:hover { color: var(--gold); }
+.nav-links a:hover::after { width: 100%; }
+
+.nav-toggle { display: none; background: none; border: none; cursor: pointer; font-size: 1.5rem; color: var(--ink); }
+
+@media (max-width: 880px) {
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0; right: 0;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    padding: 24px 28px;
+    gap: 18px;
+    transform: translateY(-110%);
+    opacity: 0;
+    transition: all 0.4s ease;
+    pointer-events: none;
+  }
+  .nav-links.open { transform: translateY(0); opacity: 1; pointer-events: auto; }
+  .nav-toggle { display: block; }
+}
+
+/* ============== HERO + MOTION GRAPHICS ============== */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 20% 30%, rgba(248, 215, 227, 0.95) 0%, transparent 55%),
+    radial-gradient(ellipse at 80% 70%, rgba(230, 230, 250, 0.95) 0%, transparent 55%),
+    linear-gradient(135deg, #fff5f8 0%, #f4eeff 100%);
+}
+
+/* Big rotating mandala backdrop */
+.hero-mandala {
+  position: absolute;
+  width: 900px; height: 900px;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  opacity: 0.35;
+  z-index: 0;
+}
+.hero-mandala .ring-1 { animation: spin 60s linear infinite; transform-origin: center; }
+.hero-mandala .ring-2 { animation: spin 90s linear infinite reverse; transform-origin: center; }
+.hero-mandala .ring-3 { animation: spin 120s linear infinite; transform-origin: center; }
+
+/* Sacred geometry that draws in */
+.hero-geometry {
+  position: absolute;
+  width: 600px; height: 600px;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  opacity: 0.5;
+  z-index: 1;
+}
+.hero-geometry path, .hero-geometry circle, .hero-geometry line {
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 2000;
+  animation: drawIn 4s ease forwards 0.8s;
+}
+@keyframes drawIn { to { stroke-dashoffset: 0; } }
+
+/* Floating spiritual symbols */
+.float-symbol {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0.4;
+  animation: floatY 8s ease-in-out infinite;
+  z-index: 1;
+}
+@keyframes floatY {
+  0%, 100% { transform: translateY(0) rotate(0); }
+  50% { transform: translateY(-30px) rotate(15deg); }
+}
+
+.particles { position: absolute; inset: 0; pointer-events: none; z-index: 2; }
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0) 70%);
+  animation: float 14s ease-in-out infinite;
+  filter: blur(0.5px);
+}
+@keyframes float {
+  0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.4; }
+  25% { transform: translate(30px, -40px) scale(1.2); opacity: 0.9; }
+  50% { transform: translate(-20px, -80px) scale(0.9); opacity: 0.6; }
+  75% { transform: translate(20px, -50px) scale(1.1); opacity: 0.8; }
+}
+
+.aura {
+  position: absolute;
+  width: 520px; height: 520px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(248, 215, 227, 0.5) 0%, rgba(230, 230, 250, 0.3) 50%, transparent 75%);
+  filter: blur(40px);
+  animation: pulse 6s ease-in-out infinite;
+  z-index: 1;
+}
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 0.7; }
+  50% { transform: scale(1.15); opacity: 1; }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 5;
+  max-width: 880px;
+  padding: 100px 24px 0;
+}
+
+.hero-eyebrow {
+  display: inline-block;
+  font-size: 0.78rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 500;
+  margin-bottom: 22px;
+  padding: 8px 22px;
+  border: 1px solid rgba(212, 175, 122, 0.4);
+  border-radius: 100px;
+  background: rgba(255,255,255,0.5);
+  backdrop-filter: blur(8px);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: rise 1s ease forwards 0.3s;
+}
+
+.hero h1 {
+  font-size: clamp(2.4rem, 6vw, 4.8rem);
+  line-height: 1.05;
+  margin-bottom: 22px;
+  background: linear-gradient(135deg, #6b4c7a 0%, #b87a9a 50%, #d4af7a 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 600;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: rise 1.1s ease forwards 0.6s;
+}
+.hero h1 em { font-style: italic; font-weight: 400; }
+
+.hero-name {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: clamp(1rem, 1.6vw, 1.25rem);
+  color: var(--ink-soft);
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  opacity: 0;
+  animation: rise 1s ease forwards 0.9s;
+}
+
+.hero p.lead {
+  font-size: clamp(1rem, 1.5vw, 1.18rem);
+  color: var(--ink-soft);
+  max-width: 620px;
+  margin: 0 auto 38px;
+  font-weight: 300;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: rise 1s ease forwards 1.1s;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: rise 1s ease forwards 1.4s;
+}
+
+@keyframes rise {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-badges {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  margin-top: 56px;
+  flex-wrap: wrap;
+  opacity: 0;
+  animation: rise 1.2s ease forwards 1.7s;
+}
+.badge-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  padding: 10px 18px;
+  background: rgba(255,255,255,0.5);
+  border-radius: 100px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.5);
+}
+.badge-item svg { width: 18px; height: 18px; stroke: var(--gold); }
+
+/* ============== BUTTON ============== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 34px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--white);
+  background: linear-gradient(135deg, #d4af7a 0%, #e8c89a 50%, #d4af7a 100%);
+  background-size: 200% 200%;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  box-shadow: 0 12px 30px rgba(212, 175, 122, 0.4), 0 0 0 1px rgba(255,255,255,0.5) inset;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+.btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.3), transparent);
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+.btn:hover {
+  transform: translateY(-3px);
+  background-position: 100% 100%;
+  box-shadow: 0 18px 40px rgba(212, 175, 122, 0.55), 0 0 0 1px rgba(255,255,255,0.8) inset;
+}
+.btn:hover::before { opacity: 1; }
+.btn-arrow { transition: transform 0.3s; }
+.btn:hover .btn-arrow { transform: translateX(4px); }
+
+.btn.btn-outline {
+  background: rgba(255,255,255,0.6);
+  color: var(--ink);
+  box-shadow: 0 8px 22px rgba(180, 140, 180, 0.18), 0 0 0 1px rgba(212, 175, 122, 0.5) inset;
+}
+.btn.btn-outline:hover {
+  background: rgba(255,255,255,0.9);
+}
+
+.btn.btn-wa {
+  background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+  box-shadow: 0 12px 30px rgba(37, 211, 102, 0.35);
+}
+.btn.btn-wa:hover {
+  box-shadow: 0 18px 40px rgba(37, 211, 102, 0.5);
+}
+
+.scroll-cue {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.72rem;
+  letter-spacing: 3px;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  z-index: 5;
+  opacity: 0.6;
+  animation: bob 2.5s ease-in-out infinite;
+}
+@keyframes bob {
+  0%, 100% { transform: translate(-50%, 0); }
+  50% { transform: translate(-50%, 8px); }
+}
+
+/* ============== SECTION BASE ============== */
+section { padding: 110px 0; position: relative; }
+.section-title { text-align: center; margin-bottom: 64px; }
+.section-title .eyebrow {
+  display: inline-block;
+  font-size: 0.76rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+.section-title h2 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  margin-bottom: 14px;
+}
+.section-title p {
+  color: var(--ink-soft);
+  max-width: 560px;
+  margin: 0 auto;
+  font-weight: 300;
+}
+
+/* ============== INTRO ============== */
+.intro {
+  position: relative;
+  padding: 100px 0;
+  overflow: hidden;
+}
+.intro::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 80% 20%, rgba(248, 215, 227, 0.45) 0%, transparent 50%),
+    radial-gradient(ellipse at 20% 80%, rgba(230, 230, 250, 0.45) 0%, transparent 50%);
+  pointer-events: none;
+}
+.intro .container { position: relative; z-index: 1; }
+.intro-card {
+  max-width: 1040px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 36px;
+  padding: 60px 56px;
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 56px;
+  align-items: center;
+  box-shadow: var(--shadow-soft), 0 0 80px rgba(248, 215, 227, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+.intro-card::before {
+  content: '';
+  position: absolute;
+  top: -50%; right: -20%;
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(212, 175, 122, 0.15) 0%, transparent 60%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.intro-visual {
+  position: relative;
+  aspect-ratio: 1/1;
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at 50% 40%, rgba(255,255,255,0.6) 0%, transparent 60%),
+    linear-gradient(135deg, var(--pink) 0%, var(--lavender) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: inset 0 0 40px rgba(255,255,255,0.4), 0 12px 40px rgba(180,140,180,0.3);
+}
+.intro-visual svg.intro-mandala {
+  width: 80%;
+  height: 80%;
+  animation: spin 50s linear infinite;
+}
+.intro-visual svg.intro-lotus {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  animation: pulseBtn 3s ease-in-out infinite;
+}
+.intro-visual::after {
+  content: '';
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,0.4) 0%, transparent 70%);
+  filter: blur(20px);
+  animation: pulse 4s ease-in-out infinite;
+}
+.intro-content .eyebrow {
+  display: block;
+  font-size: 0.76rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+.intro-content h2 {
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  margin-bottom: 22px;
+  line-height: 1.2;
+}
+.intro-content h2 em {
+  font-style: italic;
+  background: linear-gradient(135deg, #b87a9a, #d4af7a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.intro-content p {
+  color: var(--ink-soft);
+  margin-bottom: 16px;
+  font-weight: 300;
+  font-size: 0.98rem;
+}
+.intro-quote {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  color: var(--gold);
+  font-size: 1.05rem;
+  margin-top: 18px;
+  padding-left: 16px;
+  border-left: 2px solid var(--gold);
+}
+.intro-actions {
+  margin-top: 28px;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+@media (max-width: 820px) {
+  .intro-card { grid-template-columns: 1fr; padding: 44px 28px; gap: 36px; }
+  .intro-visual { max-width: 320px; margin: 0 auto; }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* ============== ABOUT ============== */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 70px;
+  align-items: center;
+}
+.about-video-wrap {
+  position: relative;
+  width: 100%;
+  border-radius: 28px;
+  overflow: hidden;
+  aspect-ratio: 4/5;
+  box-shadow: 0 30px 80px rgba(200, 160, 200, 0.35), 0 0 80px rgba(248, 215, 227, 0.4);
+  background:
+    radial-gradient(circle at 50% 35%, #ffe9f1 0%, #f4c8df 35%, #c9b8ee 75%, #b8a6e6 100%);
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+.about-video-wrap:hover { transform: scale(1.02); }
+.about-video {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.about-visual-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.about-visual-svg .ring { animation: spin 40s linear infinite; transform-origin: center; }
+.about-visual-svg .ring-2 { animation: spin 60s linear infinite reverse; transform-origin: center; }
+.video-label {
+  position: absolute;
+  bottom: 22px;
+  left: 0; right: 0;
+  text-align: center;
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px rgba(74,58,82,0.4);
+  pointer-events: none;
+  z-index: 3;
+}
+.video-label small {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-size: 0.7rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.85);
+  margin-top: 4px;
+}
+.video-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, transparent 40%, rgba(74, 58, 82, 0.45) 100%);
+  pointer-events: none;
+  z-index: 2;
+}
+.play-btn {
+  width: 88px; height: 88px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0 14px rgba(255,255,255,0.25), 0 16px 50px rgba(74,58,82,0.4);
+  animation: pulseBtn 2s ease-in-out infinite;
+}
+@keyframes pulseBtn {
+  0%, 100% { box-shadow: 0 0 0 12px rgba(255,255,255,0.2), 0 12px 40px rgba(180,140,180,0.4); }
+  50% { box-shadow: 0 0 0 22px rgba(255,255,255,0.0), 0 12px 40px rgba(180,140,180,0.4); }
+}
+.play-btn svg { width: 32px; height: 32px; fill: var(--gold); margin-left: 4px; }
+
+.about-text .eyebrow {
+  font-size: 0.76rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 500;
+  margin-bottom: 14px;
+  display: block;
+}
+.about-text h2 {
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  margin-bottom: 22px;
+  line-height: 1.2;
+}
+.about-text p {
+  color: var(--ink-soft);
+  margin-bottom: 18px;
+  font-weight: 300;
+}
+.about-text .signature {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  color: var(--gold);
+  font-size: 1.2rem;
+  margin-top: 18px;
+}
+
+.about-stats {
+  display: flex;
+  gap: 36px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+.stat {
+  border-left: 2px solid var(--gold);
+  padding-left: 18px;
+}
+.stat-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  color: var(--ink);
+  font-weight: 600;
+}
+.stat-label {
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 880px) {
+  .about-grid { grid-template-columns: 1fr; gap: 48px; }
+  .about-video-wrap { max-width: 420px; margin: 0 auto; aspect-ratio: 1/1; }
+}
+
+/* ============== SERVICES ============== */
+.services {
+  background:
+    radial-gradient(ellipse at 0% 0%, rgba(248, 215, 227, 0.4) 0%, transparent 50%),
+    radial-gradient(ellipse at 100% 100%, rgba(230, 230, 250, 0.4) 0%, transparent 50%);
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+}
+.service-card {
+  position: relative;
+  padding: 40px 30px 32px;
+  background: var(--glass);
+  backdrop-filter: blur(18px);
+  border: 1px solid var(--glass-border);
+  border-radius: 28px;
+  text-align: center;
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.service-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(248, 215, 227, 0.5) 0%, rgba(230, 230, 250, 0.5) 100%);
+  opacity: 0;
+  transition: opacity 0.5s;
+  z-index: -1;
+}
+.service-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 30px 60px rgba(180, 140, 180, 0.25), 0 0 80px rgba(248, 215, 227, 0.4);
+  border-color: rgba(212, 175, 122, 0.5);
+}
+.service-card:hover::before { opacity: 1; }
+
+.service-icon {
+  width: 72px; height: 72px;
+  margin: 0 auto 22px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--pink) 0%, var(--lavender) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 30px rgba(212, 175, 122, 0.3), inset 0 0 20px rgba(255,255,255,0.5);
+  transition: transform 0.5s ease;
+}
+.service-card:hover .service-icon { transform: scale(1.1) rotate(5deg); }
+.service-icon svg { width: 34px; height: 34px; stroke: var(--ink); fill: none; stroke-width: 1.5; }
+
+.service-card h3 { font-size: 1.3rem; margin-bottom: 10px; }
+.service-card p {
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin-bottom: 22px;
+  flex-grow: 1;
+}
+
+.consult-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 22px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--white);
+  background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+  transition: all 0.35s ease;
+  text-decoration: none;
+  align-self: center;
+}
+.consult-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(37, 211, 102, 0.5);
+}
+.consult-btn svg { width: 16px; height: 16px; fill: white; }
+
+/* ============== COURSES ============== */
+.courses {
+  position: relative;
+}
+.courses::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 70% 20%, rgba(230, 230, 250, 0.4) 0%, transparent 50%),
+    radial-gradient(ellipse at 20% 80%, rgba(248, 215, 227, 0.4) 0%, transparent 50%);
+  pointer-events: none;
+}
+.courses .container { position: relative; z-index: 1; }
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 28px;
+}
+.course-card {
+  position: relative;
+  padding: 36px 30px;
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(18px);
+  border: 1px solid var(--glass-border);
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+.course-card::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 4px;
+  background: linear-gradient(90deg, var(--pink), var(--gold), var(--lavender));
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+.course-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 55px rgba(180, 140, 180, 0.22);
+  border-color: rgba(212, 175, 122, 0.5);
+}
+.course-card:hover::after { opacity: 1; }
+
+.course-level {
+  display: inline-block;
+  font-size: 0.7rem;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 500;
+  margin-bottom: 12px;
+  padding: 4px 12px;
+  background: rgba(212, 175, 122, 0.1);
+  border-radius: 100px;
+  align-self: flex-start;
+}
+.course-card h3 {
+  font-size: 1.45rem;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+.course-card .desc {
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin-bottom: 22px;
+  flex-grow: 1;
+}
+.course-price {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  margin-bottom: 22px;
+  padding-bottom: 22px;
+  border-bottom: 1px dashed rgba(212, 175, 122, 0.35);
+}
+.course-price .currency {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  color: var(--ink-soft);
+}
+.course-price .amount {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--ink);
+  background: linear-gradient(135deg, var(--ink) 0%, var(--gold) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.course-price .unit {
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  margin-left: 4px;
+}
+
+/* ============== REVIEWS ============== */
+.reviews {
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(248, 215, 227, 0.5) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 100%, rgba(230, 230, 250, 0.5) 0%, transparent 50%);
+  overflow: hidden;
+}
+
+.reviews-track-wrap {
+  position: relative;
+  margin: 0 -28px;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, black 8%, black 92%, transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0%, black 8%, black 92%, transparent 100%);
+}
+.reviews-track {
+  display: flex;
+  gap: 24px;
+  padding: 28px;
+  width: max-content;
+  animation: marquee 60s linear infinite;
+}
+.reviews-track:hover { animation-play-state: paused; }
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.review-card {
+  flex: 0 0 280px;
+  background: white;
+  border-radius: 22px;
+  padding: 0;
+  overflow: hidden;
+  box-shadow: 0 18px 40px rgba(180, 140, 180, 0.18);
+  cursor: pointer;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  border: 1px solid rgba(255,255,255,0.8);
+  position: relative;
+}
+.review-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 55px rgba(180, 140, 180, 0.28);
+}
+.review-card img.review-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: linear-gradient(135deg, #f8d7e3, #e6e6fa);
+}
+.review-card.placeholder {
+  height: 380px;
+  background: linear-gradient(135deg, var(--pink) 0%, var(--lavender) 100%);
+}
+.review-card.placeholder img.review-img { display: none; }
+.review-card .placeholder-inner {
+  display: none;
+  position: absolute;
+  inset: 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 28px;
+  color: var(--ink);
+}
+.review-card.placeholder .placeholder-inner { display: flex; }
+.placeholder-inner svg {
+  width: 38px; height: 38px;
+  stroke: var(--ink);
+  fill: none;
+  stroke-width: 1.5;
+  margin-bottom: 14px;
+  opacity: 0.55;
+}
+.placeholder-inner b {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+.placeholder-inner span {
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  letter-spacing: 0.5px;
+}
+.placeholder-inner code {
+  font-family: 'Poppins', sans-serif;
+  background: rgba(255,255,255,0.5);
+  padding: 4px 10px;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-size: 0.72rem;
+  color: var(--ink);
+  letter-spacing: 0.3px;
+}
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 18px;
+  background: linear-gradient(135deg, #f8d7e3 0%, #e6e6fa 100%);
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+.review-avatar {
+  width: 42px; height: 42px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--white), #fff5f8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  color: var(--ink);
+  box-shadow: 0 2px 8px rgba(180,140,180,0.25);
+}
+.review-meta { flex: 1; min-width: 0; }
+.review-name {
+  font-weight: 500;
+  color: var(--ink);
+  font-size: 0.92rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.review-handle {
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+}
+.review-stars {
+  display: flex;
+  gap: 2px;
+  margin-left: auto;
+}
+.review-stars svg { width: 14px; height: 14px; fill: var(--gold); }
+
+.review-body {
+  padding: 18px 20px 22px;
+  font-size: 0.92rem;
+  color: var(--ink);
+  font-weight: 300;
+  line-height: 1.6;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+}
+.review-footer {
+  padding: 0 20px 16px;
+  font-size: 0.7rem;
+  color: var(--ink-soft);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Manual scroll arrows */
+.reviews-controls {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 36px;
+}
+.rev-arrow {
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  background: white;
+  border: 1px solid rgba(212, 175, 122, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: var(--shadow-soft);
+  transition: all 0.3s;
+  font-size: 1.2rem;
+  color: var(--ink);
+}
+.rev-arrow:hover {
+  background: var(--gold);
+  color: var(--white);
+  transform: scale(1.1);
+}
+
+/* Review modal */
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(74, 58, 82, 0.6);
+  backdrop-filter: blur(8px);
+  padding: 24px;
+  animation: fadeIn 0.3s ease;
+}
+.modal.open { display: flex; }
+.modal-content {
+  background: white;
+  border-radius: 28px;
+  max-width: 480px;
+  width: 100%;
+  overflow: hidden;
+  animation: zoomIn 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.modal-close {
+  position: absolute;
+  top: 24px; right: 24px;
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  background: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.4rem;
+  color: var(--ink);
+  box-shadow: var(--shadow-soft);
+}
+@keyframes zoomIn {
+  from { opacity: 0; transform: scale(0.85); }
+  to { opacity: 1; transform: scale(1); }
+}
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* ============== CONTACT / BOOKING ============== */
+.booking {
+  position: relative;
+  background:
+    radial-gradient(ellipse at 30% 50%, rgba(248, 215, 227, 0.7) 0%, transparent 50%),
+    radial-gradient(ellipse at 70% 50%, rgba(230, 230, 250, 0.7) 0%, transparent 50%),
+    linear-gradient(135deg, #fdf4f7 0%, #f4eeff 100%);
+}
+.booking-card {
+  max-width: 640px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 32px;
+  padding: 50px 44px;
+  box-shadow: var(--shadow-soft), 0 0 80px rgba(248, 215, 227, 0.4);
+  text-align: center;
+}
+@media (max-width: 600px) { .booking-card { padding: 38px 24px; } }
+
+.booking-card h3 {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  margin-bottom: 14px;
+}
+.booking-card p {
+  color: var(--ink-soft);
+  margin-bottom: 28px;
+  font-weight: 300;
+}
+.booking-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ============== FLOATING WHATSAPP ============== */
+.float-wa {
+  position: fixed;
+  bottom: 26px; right: 26px;
+  width: 60px; height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #25d366, #128c7e);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(37, 211, 102, 0.45);
+  z-index: 90;
+  transition: transform 0.3s ease;
+  animation: pulseBtn 2.4s ease-in-out infinite;
+}
+.float-wa:hover { transform: scale(1.1); }
+.float-wa svg { width: 30px; height: 30px; fill: white; }
+
+/* ============== FOOTER ============== */
+footer {
+  background:
+    radial-gradient(ellipse at 0% 100%, rgba(248, 215, 227, 0.6) 0%, transparent 50%),
+    radial-gradient(ellipse at 100% 0%, rgba(230, 230, 250, 0.6) 0%, transparent 50%),
+    linear-gradient(135deg, #fff5f8 0%, #f4eeff 100%);
+  padding: 80px 0 30px;
+  border-top: 1px solid rgba(212, 175, 122, 0.2);
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 56px;
+  margin-bottom: 56px;
+}
+@media (max-width: 720px) { .footer-grid { grid-template-columns: 1fr; gap: 40px; } }
+
+.footer-brand p {
+  color: var(--ink-soft);
+  margin-top: 14px;
+  font-size: 0.9rem;
+  font-weight: 300;
+  max-width: 320px;
+}
+.footer-col h4 {
+  font-size: 1.05rem;
+  margin-bottom: 18px;
+}
+.footer-col ul { list-style: none; }
+.footer-col li {
+  margin-bottom: 10px;
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer-col a { transition: color 0.3s; }
+.footer-col a:hover { color: var(--gold); }
+.footer-col svg { width: 16px; height: 16px; stroke: var(--gold); fill: none; stroke-width: 1.6; flex-shrink: 0; }
+
+.socials { display: flex; gap: 12px; margin-top: 22px; }
+.social {
+  width: 42px; height: 42px;
+  border-radius: 50%;
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  backdrop-filter: blur(10px);
+}
+.social:hover {
+  background: var(--gold);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(212, 175, 122, 0.4);
+}
+.social svg { width: 18px; height: 18px; fill: var(--ink); transition: fill 0.3s; }
+.social:hover svg { fill: var(--white); }
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 30px;
+  border-top: 1px solid rgba(212, 175, 122, 0.15);
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+  font-weight: 300;
+}
+.footer-bottom span { color: var(--gold); }
+
+</style>
+</head>
+<body>
+
+<!-- ============== LOADER ============== -->
+<div class="loader" id="loader">
+  <svg class="loader-mandala" viewBox="0 0 100 100" fill="none" stroke="#d4af7a" stroke-width="0.6">
+    <circle cx="50" cy="50" r="45"/>
+    <circle cx="50" cy="50" r="35"/>
+    <circle cx="50" cy="50" r="25"/>
+    <g>
+      <line x1="50" y1="5" x2="50" y2="95"/>
+      <line x1="5" y1="50" x2="95" y2="50"/>
+      <line x1="18" y1="18" x2="82" y2="82"/>
+      <line x1="82" y1="18" x2="18" y2="82"/>
+    </g>
+    <circle cx="50" cy="50" r="6" fill="#d4af7a"/>
+  </svg>
+</div>
+
+<!-- ============== NAV ============== -->
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#" class="brand">
+      <span class="brand-mark">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5">
+          <path d="M12 2c0 4-3 7-3 10s3 5 3 10c0-5 3-7 3-10s-3-6-3-10z"/>
+          <path d="M2 12c4 0 7 3 10 3s5-3 10-3c-5 0-7-3-10-3s-6 3-10 3z"/>
+        </svg>
+      </span>
+    <span class="brand-text" style="color: #c5a680; text-transform: uppercase;">
+    <small style="letter-spacing: 4px;">Cosmic Healer
+      <br> 
+      <span style="font-size: 2.5em; font-weight: normal; letter-spacing: 6px; display: inline-block; margin-top: 5px;">Deepali</span>
+    </small>
+</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#courses">Courses</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+  </div>
+</nav>
+
+<!-- ============== HERO ============== -->
+<header class="hero">
+  <!-- Big rotating mandala backdrop -->
+  <svg class="hero-mandala" viewBox="0 0 200 200" fill="none" stroke="#d4af7a" stroke-width="0.3">
+    <g class="ring-1">
+      <circle cx="100" cy="100" r="90"/>
+      <circle cx="100" cy="100" r="80"/>
+      <g>
+        <line x1="100" y1="10" x2="100" y2="190"/>
+        <line x1="10" y1="100" x2="190" y2="100"/>
+        <line x1="35" y1="35" x2="165" y2="165"/>
+        <line x1="165" y1="35" x2="35" y2="165"/>
+      </g>
+    </g>
+    <g class="ring-2">
+      <circle cx="100" cy="100" r="65"/>
+      <circle cx="100" cy="100" r="50"/>
+      <g stroke-width="0.4">
+        <circle cx="100" cy="50" r="20"/>
+        <circle cx="100" cy="150" r="20"/>
+        <circle cx="50" cy="100" r="20"/>
+        <circle cx="150" cy="100" r="20"/>
+      </g>
+    </g>
+    <g class="ring-3">
+      <circle cx="100" cy="100" r="35"/>
+      <circle cx="100" cy="100" r="22"/>
+      <g stroke-width="0.4">
+        <circle cx="100" cy="78" r="14"/>
+        <circle cx="100" cy="122" r="14"/>
+        <circle cx="78" cy="100" r="14"/>
+        <circle cx="122" cy="100" r="14"/>
+        <circle cx="84" cy="84" r="14"/>
+        <circle cx="116" cy="116" r="14"/>
+        <circle cx="116" cy="84" r="14"/>
+        <circle cx="84" cy="116" r="14"/>
+      </g>
+    </g>
+  </svg>
+
+  <!-- Sacred geometry that draws in -->
+  <svg class="hero-geometry" viewBox="0 0 200 200" fill="none" stroke="#b87a9a" stroke-width="0.4">
+    <circle cx="100" cy="100" r="60"/>
+    <circle cx="100" cy="60" r="40"/>
+    <circle cx="100" cy="140" r="40"/>
+    <circle cx="60" cy="100" r="40"/>
+    <circle cx="140" cy="100" r="40"/>
+    <circle cx="72" cy="72" r="40"/>
+    <circle cx="128" cy="128" r="40"/>
+    <circle cx="128" cy="72" r="40"/>
+    <circle cx="72" cy="128" r="40"/>
+  </svg>
+
+  <!-- Floating spiritual symbols -->
+  <svg class="float-symbol" style="top: 18%; left: 12%; width: 60px; height: 60px;" viewBox="0 0 100 100" fill="none" stroke="#d4af7a" stroke-width="1.2">
+    <!-- Lotus -->
+    <g transform="translate(50,55)">
+      <ellipse cx="0" cy="-15" rx="6" ry="20"/>
+      <ellipse cx="0" cy="-15" rx="6" ry="20" transform="rotate(60)"/>
+      <ellipse cx="0" cy="-15" rx="6" ry="20" transform="rotate(-60)"/>
+      <ellipse cx="0" cy="-15" rx="6" ry="20" transform="rotate(120)"/>
+      <ellipse cx="0" cy="-15" rx="6" ry="20" transform="rotate(-120)"/>
+      <ellipse cx="0" cy="-15" rx="6" ry="20" transform="rotate(180)"/>
+    </g>
+  </svg>
+  <svg class="float-symbol" style="top: 22%; right: 14%; width: 50px; height: 50px; animation-delay: -3s;" viewBox="0 0 100 100" fill="none" stroke="#b87a9a" stroke-width="1.2">
+    <!-- Om-like -->
+    <circle cx="50" cy="50" r="10"/>
+    <path d="M30 50 Q40 30 50 50 T70 50"/>
+    <circle cx="50" cy="20" r="5"/>
+  </svg>
+  <svg class="float-symbol" style="bottom: 22%; left: 16%; width: 55px; height: 55px; animation-delay: -5s;" viewBox="0 0 100 100" fill="none" stroke="#d4af7a" stroke-width="1">
+    <path d="M10 50 Q30 30 50 50 T90 50"/>
+    <path d="M10 60 Q30 40 50 60 T90 60"/>
+    <path d="M10 40 Q30 20 50 40 T90 40"/>
+  </svg>
+  <svg class="float-symbol" style="bottom: 24%; right: 12%; width: 48px; height: 48px; animation-delay: -2s;" viewBox="0 0 100 100" fill="none" stroke="#b87a9a" stroke-width="1.2">
+    <polygon points="50,10 90,80 10,80"/>
+    <polygon points="50,90 10,20 90,20"/>
+  </svg>
+
+  <div class="aura" style="top: 20%; left: 15%;"></div>
+  <div class="aura" style="bottom: 15%; right: 10%; animation-delay: -3s;"></div>
+  <div class="particles" id="particles"></div>
+
+  <div class="hero-content">
+    <span class="hero-eyebrow">✦ Reiki Grand Master · Tarot · Crystal ✦</span>
+    <div class="hero-name">— Cosmic Healer Deepali Khanna —</div>
+    <h1>Awaken Your Soul,<br><em>Heal Your Universe</em></h1>
+    <p class="lead">11 years of channelling divine energy to heal hearts, balance minds, and guide souls home — through Reiki, Crystals, Tarot &amp; the sacred wisdom of Bach Flowers.</p>
+
+    <div class="hero-ctas">
+      <a href="#" class="btn" data-wa="Hi Deepali, I would like to book a healing session.">
+        Book a Session
+        <span class="btn-arrow">→</span>
+      </a>
+      <a href="#courses" class="btn btn-outline">
+        Explore Courses
+        <span class="btn-arrow">↓</span>
+      </a>
+    </div>
+
+    <div class="hero-badges">
+      <div class="badge-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg>
+        Reiki Grand Master
+      </div>
+      <div class="badge-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        11+ Years of Healing
+      </div>
+      <!-- <div class="badge-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M3 12h18M12 3v18"/><circle cx="12" cy="12" r="9"/></svg>
+        Sessions Worldwide
+      </div> -->
+    </div>
+  </div>
+
+  <div class="scroll-cue">Scroll to begin ↓</div>
+</header>
+
+<!-- ============== INTRODUCTION ============== -->
+<section class="intro" id="intro">
+  <div class="container">
+    <div class="intro-card reveal">
+      <div class="intro-visual">
+        <img src="pink mam.jpeg" alt="">
+        <!-- <svg class="intro-mandala" viewBox="0 0 200 200" fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="0.4">
+          <circle cx="100" cy="100" r="90"/>
+          <circle cx="100" cy="100" r="70"/>
+          <circle cx="100" cy="100" r="50"/>
+          <g>
+            <line x1="100" y1="10" x2="100" y2="190"/>
+            <line x1="10" y1="100" x2="190" y2="100"/>
+            <line x1="35" y1="35" x2="165" y2="165"/>
+            <line x1="165" y1="35" x2="35" y2="165"/>
+          </g>
+          <g stroke="rgba(212,175,122,0.9)">
+            <circle cx="100" cy="60" r="24"/>
+            <circle cx="100" cy="140" r="24"/>
+            <circle cx="60" cy="100" r="24"/>
+            <circle cx="140" cy="100" r="24"/>
+          </g>
+        </svg>
+        <svg class="intro-lotus" viewBox="0 0 100 100" fill="rgba(255,255,255,0.55)" stroke="rgba(212,175,122,1)" stroke-width="1">
+          <g transform="translate(50,55)">
+            <ellipse cx="0" cy="-12" rx="7" ry="22"/>
+            <ellipse cx="0" cy="-12" rx="7" ry="22" transform="rotate(60)"/>
+            <ellipse cx="0" cy="-12" rx="7" ry="22" transform="rotate(-60)"/>
+            <ellipse cx="0" cy="-12" rx="7" ry="22" transform="rotate(120)"/>
+            <ellipse cx="0" cy="-12" rx="7" ry="22" transform="rotate(-120)"/>
+            <ellipse cx="0" cy="-12" rx="7" ry="22" transform="rotate(180)"/>
+            <circle cx="0" cy="0" r="6" fill="rgba(212,175,122,1)" stroke="none"/>
+          </g>
+        </svg> -->
+      </div>
+      <div class="intro-content">
+        <span class="eyebrow">✦ Namaste &amp; Welcome ✦</span>
+        <h2>A Sacred Space for <em>Your Awakening</em></h2>
+        <p>Beautiful soul — you have arrived for a reason. I am Deepali, your guide through the worlds of Reiki, crystals, tarot &amp; the gentle wisdom of Bach Flowers. For 11 years I have held space for thousands of seekers, and now I hold one for you.</p>
+        <p>Whether you come seeking healing, guidance, or to awaken the healer within yourself — there is a sacred path waiting. Step in. The Universe has been waiting.</p>
+        <p class="intro-quote">"Healing is not a destination — it is a remembering of who you have always been."</p>
+        <div class="intro-actions">
+          <a href="#about" class="btn btn-outline">Read My Story <span class="btn-arrow">→</span></a>
+          <a href="#" class="btn" data-wa="Hi Deepali, I would love to begin my healing journey with you.">
+            Begin My Journey <span class="btn-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== ABOUT ============== -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid reveal">
+      <div class="about-video-wrap" id="videoWrap">
+        <!--
+          REPLACE THIS: Drop your video file at artifacts/reiki-website/public/about.mp4
+          and uncomment the <video> tag below. The animated visual stays as a fallback.
+        -->
+        <video class="about-video" src="about video.mp4" poster="about poster.jpeg" controls></video>
+        <!-- <svg class="about-visual-svg" viewBox="0 0 200 250" preserveAspectRatio="xMidYMid slice"> -->
+          <!-- <defs>
+            <radialGradient id="vg1" cx="50%" cy="42%">
+              <stop offset="0%" stop-color="#fff" stop-opacity="0.95"/>
+              <stop offset="55%" stop-color="#fff" stop-opacity="0.35"/>
+              <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+            </radialGradient>
+          </defs> -->
+          <!-- Big glow halo behind everything -->
+          <!-- <circle cx="100" cy="105" r="85" fill="url(#vg1)"/> -->
+
+          <!-- Outer rotating mandala ring -->
+          <!-- <g class="ring" transform-origin="100 105">
+            <g transform="translate(100,105)" stroke="rgba(255,255,255,0.85)" stroke-width="0.8" fill="none">
+              <circle r="80"/>
+              <circle r="68"/>
+              <line x1="-80" y1="0" x2="80" y2="0"/>
+              <line x1="0" y1="-80" x2="0" y2="80"/>
+              <line x1="-57" y1="-57" x2="57" y2="57"/>
+              <line x1="57" y1="-57" x2="-57" y2="57"/>
+            </g>
+          </g> -->
+
+          <!-- Inner counter-rotating ring with petals -->
+          <!-- <g class="ring-2" transform-origin="100 105">
+            <g transform="translate(100,105)" stroke="rgba(212,175,122,1)" stroke-width="0.9" fill="none">
+              <circle r="50"/>
+              <circle cx="0" cy="-30" r="18"/>
+              <circle cx="0" cy="30" r="18"/>
+              <circle cx="-30" cy="0" r="18"/>
+              <circle cx="30" cy="0" r="18"/>
+              <circle cx="-21" cy="-21" r="18"/>
+              <circle cx="21" cy="21" r="18"/>
+              <circle cx="-21" cy="21" r="18"/>
+              <circle cx="21" cy="-21" r="18"/>
+            </g>
+          </g> -->
+
+          <!-- Center lotus -->
+          <!-- <g transform="translate(100,105)" fill="rgba(255,255,255,0.92)" stroke="rgba(212,175,122,1)" stroke-width="0.6">
+            <ellipse cx="0" cy="-13" rx="6" ry="20"/>
+            <ellipse cx="0" cy="-13" rx="6" ry="20" transform="rotate(60)"/>
+            <ellipse cx="0" cy="-13" rx="6" ry="20" transform="rotate(-60)"/>
+            <ellipse cx="0" cy="-13" rx="6" ry="20" transform="rotate(120)"/>
+            <ellipse cx="0" cy="-13" rx="6" ry="20" transform="rotate(-120)"/>
+            <ellipse cx="0" cy="-13" rx="6" ry="20" transform="rotate(180)"/>
+            <circle cx="0" cy="0" r="5" fill="rgba(212,175,122,1)" stroke="none"/>
+          </g>
+        </svg> -->
+
+        <!-- <div class="video-overlay">
+          <div class="play-btn">
+            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+        </div> -->
+        <div class="video-label">
+          Watch My Story
+          <small>— Cosmic Healer Deepali —</small>
+        </div>
+      </div>
+
+      <div class="about-text">
+        <span class="eyebrow">About Deepali</span>
+        <h2>Walking the Path of Light <em style="color:var(--gold);">for 11 Sacred Years</em></h2>
+        <p>I am Deepali Khanna — a Reiki Grand Master, certified Tarot reader, Crystal &amp; Bach Flower healer, and a humble student of the cosmos. For over a decade, I have held space for thousands of souls seeking light through life's storms.</p>
+        <p>My path is not about prescribing answers — it is about awakening the healer that already lives within you. Every session, every course, every blessing is offered with intention, devotion, and the belief that healing is your birthright.</p>
+        <p class="signature">— With light &amp; love, Deepali</p>
+
+        <div class="about-stats">
+          <div class="stat">
+            <div class="stat-num">11+</div>
+            <div class="stat-label">Years of Practice</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">5★</div>
+            <div class="stat-label">Sacred Reviews</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">∞</div>
+            <div class="stat-label">Souls Touched</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== SERVICES ============== -->
+<section id="services" class="services">
+  <div class="container">
+    <div class="section-title reveal">
+      <span class="eyebrow">Sacred Offerings</span>
+      <h2>Healing &amp; Guidance Services</h2>
+      <p>Each session is a one-on-one journey into stillness, clarity and energetic alignment.</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3"/>
+            <path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l3 3M16 16l3 3M5 19l3-3M16 8l3-3"/>
+          </svg>
+        </div>
+        <h3>Reiki Healing</h3>
+        <p>Distance &amp; in-person Reiki sessions to release blockages, calm anxiety, and restore deep cellular peace.</p>
+        <a href="#" class="consult-btn" data-wa="Hi Deepali, I would like to book a Reiki Healing session.">
+          <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.2-.7.1-.2.3-.8.9-1 1.1-.2.2-.4.2-.7.1-.3-.2-1.2-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2.1 3.2 5.1 4.5 1.7.7 2.4.8 3.2.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+          Consult Now
+        </a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3l3 6 6 1-4.5 4 1 6L12 17l-5.5 3 1-6L3 10l6-1z"/>
+          </svg>
+        </div>
+        <h3>Crystal Healing</h3>
+        <p>Basic to advanced crystal therapy — harness the vibrational power of stones to harmonise body &amp; energy field.</p>
+        <a href="#" class="consult-btn" data-wa="Hi Deepali, I would like to book a Crystal Healing session.">
+          <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.2-.7.1-.2.3-.8.9-1 1.1-.2.2-.4.2-.7.1-.3-.2-1.2-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2.1 3.2 5.1 4.5 1.7.7 2.4.8 3.2.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+          Consult Now
+        </a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3v18M6 7c0 4 6 4 6 8M18 7c0 4-6 4-6 8"/>
+            <circle cx="12" cy="6" r="2"/>
+          </svg>
+        </div>
+        <h3>Bach Flower Healing</h3>
+        <p>Gentle plant essences that dissolve emotional turbulence — fear, grief, doubt — and return you to balance.</p>
+        <a href="#" class="consult-btn" data-wa="Hi Deepali, I would like a Bach Flower Healing consultation.">
+          <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.2-.7.1-.2.3-.8.9-1 1.1-.2.2-.4.2-.7.1-.3-.2-1.2-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2.1 3.2 5.1 4.5 1.7.7 2.4.8 3.2.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+          Consult Now
+        </a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="6" y="3" width="12" height="18" rx="2"/>
+            <circle cx="12" cy="12" r="3"/>
+            <path d="M9 7h6M9 17h6"/>
+          </svg>
+        </div>
+        <h3>Tarot Reading</h3>
+        <p>Receive intuitive guidance from the cards — clarity for love, career, and your next sacred step forward.</p>
+        <a href="#" class="consult-btn" data-wa="Hi Deepali, I would like to book a Tarot Reading.">
+          <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.2-.7.1-.2.3-.8.9-1 1.1-.2.2-.4.2-.7.1-.3-.2-1.2-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2.1 3.2 5.1 4.5 1.7.7 2.4.8 3.2.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+          Consult Now
+        </a>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+            <path d="M9 7h7M9 11h7"/>
+          </svg>
+        </div>
+        <h3>Reiki Teaching</h3>
+        <p>Become the healer you were born to be — one-on-one guided initiations from Basic to Grand Master level.</p>
+        <a href="#courses" class="consult-btn" style="background: linear-gradient(135deg, #d4af7a, #b8956a);">
+          <svg viewBox="0 0 24 24" fill="white"><path d="M9 18l6-6-6-6"/></svg>
+          View Courses
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== COURSES ============== -->
+<section id="courses" class="courses">
+  <div class="container">
+    <div class="section-title reveal">
+      <span class="eyebrow">Sacred Curriculum</span>
+      <h2>Reiki &amp; Healing Courses</h2>
+      <p>Step onto the path of becoming a healer yourself — every level is a doorway deeper into the divine.</p>
+    </div>
+
+    <div class="courses-grid">
+      <div class="course-card reveal">
+        <span class="course-level">Beginner</span>
+        <h3>Reiki Level 1 &amp; 2</h3>
+        <p class="desc">Your foundational initiation into Reiki — learn to channel universal energy, give self-healing, and offer gentle healing to others.</p>
+        <div class="course-price">
+          <span class="currency">₹</span>
+          <span class="amount">15,000</span>
+          <span class="unit">/ course</span>
+        </div>
+        <a href="#" class="consult-btn" data-wa="Hi Deepali, I'm interested in Reiki Level 1 & 2 course (₹15,000).">
+          <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.2-.7.1-.2.3-.8.9-1 1.1-.2.2-.4.2-.7.1-.3-.2-1.2-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2.1 3.2 5.1 4.5 1.7.7 2.4.8 3.2.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+          Consult Now
+        </a>
+      </div>
+
+      <div class="course-card reveal">
+        <span class="course-level">Practitioner</span>
+        <h3>Reiki Level 3</h3>
+        <p class="desc">Step into your power as an advanced practitioner — deepen your channel, work with the master symbol, and unlock distance healing.</p>
+        <div class="course-price">
+          <span class="currency">₹</span>
+          <span class="amount">20,000</span>
+          <span class="unit">/ course</span>
+        </div>
+        <a href="#" class="consult-btn" data-wa="Hi Deepali, I'm interested in Reiki Level 3 course (₹20,000).">
+          <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.2-.7.1-.2.3-.8.9-1 1.1-.2.2-.4.2-.7.1-.3-.2-1.2-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2.1 3.2 5.1 4.5 1.7.7 2.4.8 3.2.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+          Consult Now
+        </a>
+      </div>
+
+      <div class="course-card reveal">
+        <span class="course-level">Master</span>
+        <h3>Reiki Level 4</h3>
+        <p class="desc">Cross the threshold into mastery — deeper attunements, advanced symbols, and the responsibility of holding sacred space for others.</p>
+        <div class="course-price">
+          <span class="currency">₹</span>
+          <span class="amount">50,000</span>
+          <span class="unit">/ course</span>
+        </div>
+        <a href="#" class="consult-btn" data-wa="Hi Deepali, I'm interested in Reiki Level 4 course (₹50,000).">
+          <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.2-.7.1-.2.3-.8.9-1 1.1-.2.2-.4.2-.7.1-.3-.2-1.2-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2.1 3.2 5.1 4.5 1.7.7 2.4.8 3.2.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+          Consult Now
+        </a>
+      </div>
+
+      <div class="course-card reveal">
+        <span class="course-level">Grand Master</span>
+        <h3>Reiki Level 5</h3>
+        <p class="desc">The pinnacle of the Reiki path — embody the role of teacher, attune students, and walk as a Grand Master of the sacred art.</p>
+        <div class="course-price">
+          <span class="currency">₹</span>
+          <span class="amount">80,000</span>
+          <span class="unit">/ course</span>
+        </div>
+        <a href="#" class="consult-btn" data-wa="Hi Deepali, I'm interested in Reiki Level 5 course (₹80,000).">
+          <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.2-.7.1-.2.3-.8.9-1 1.1-.2.2-.4.2-.7.1-.3-.2-1.2-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2.1 3.2 5.1 4.5 1.7.7 2.4.8 3.2.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+          Consult Now
+        </a>
+      </div>
+
+      <div class="course-card reveal">
+        <span class="course-level">Complete Journey</span>
+        <h3>Basic to Advanced</h3>
+        <p class="desc">The full Reiki path — Level 1 through Grand Master — held as one continuous journey of devotion. Save and walk the entire path under one guide.</p>
+        <div class="course-price">
+          <span class="currency">₹</span>
+          <span class="amount">1,00,000</span>
+          <span class="unit">/ complete</span>
+        </div>
+        <a href="#" class="consult-btn" data-wa="Hi Deepali, I'm interested in the Basic to Advanced (Grand Master) journey (₹1,00,000).">
+          <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.2-.7.1-.2.3-.8.9-1 1.1-.2.2-.4.2-.7.1-.3-.2-1.2-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2.1 3.2 5.1 4.5 1.7.7 2.4.8 3.2.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+          Consult Now
+        </a>
+      </div>
+
+
+      <div class="course-card reveal">
+        <span class="course-level">Prosperity Path</span>
+        <h3> Money Reiki</h3>
+        <p class="desc">Align your energy with the frequency of abundance. Clear deep-seated financial blocks, heal your relationship with money, and manifest prosperity through sacred symbols and intentional healing.</p>
+        <div class="course-price">
+          <span class="currency">₹</span>
+          <span class="amount">5,500</span>
+          <span class="unit">/ each</span>
+        </div>
+        <a href="#" class="consult-btn" data-wa="Hi Deepali, I'm interested in your other healing courses (₹5,500 each).">
+          <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.2-.7.1-.2.3-.8.9-1 1.1-.2.2-.4.2-.7.1-.3-.2-1.2-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2.1 3.2 5.1 4.5 1.7.7 2.4.8 3.2.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+          Consult Now
+        </a>
+      </div>
+
+
+
+            <div class="course-card reveal">
+        <span class="course-level">Divine Connection</span>
+        <h3>Angel Reiki Basic To Advanced</h3>
+        <p class="desc">Connect with the higher realms and harness the healing power of Archangels. A complete journey from foundational techniques to advanced angelic communication, designed to bring divine light and protection into your life.</p>
+        <div class="course-price">
+          <span class="currency">₹</span>
+          <span class="amount">5,500</span>
+          <span class="unit">/ each</span>
+        </div>
+        <a href="#" class="consult-btn" data-wa="Hi Deepali, I'm interested in your other healing courses (₹5,500 each).">
+          <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.2-.7.1-.2.3-.8.9-1 1.1-.2.2-.4.2-.7.1-.3-.2-1.2-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2.1 3.2 5.1 4.5 1.7.7 2.4.8 3.2.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+          Consult Now
+        </a>
+      </div>
+
+
+      <div class="course-card reveal">
+        <span class="course-level">Modular</span>
+        <h3>Other Sacred Courses</h3>
+        <p class="desc">Bach Flower (basic), Crystal Healing (basic &amp; advanced), Tarot Reading and more — choose the modality that calls your soul.</p>
+        <div class="course-price">
+          <span class="currency">₹</span>
+          <span class="amount">5,500</span>
+          <span class="unit">/ each</span>
+        </div>
+        <a href="#" class="consult-btn" data-wa="Hi Deepali, I'm interested in your other healing courses (₹5,500 each).">
+          <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.2-.7.1-.2.3-.8.9-1 1.1-.2.2-.4.2-.7.1-.3-.2-1.2-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2.1 3.2 5.1 4.5 1.7.7 2.4.8 3.2.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+          Consult Now
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== REVIEWS ============== -->
+<section id="reviews" class="reviews">
+  <div class="container">
+    <div class="section-title reveal">
+      <span class="eyebrow">Sacred Voices</span>
+      <h2>Stories of Transformation</h2>
+      <p>Click any card to read the full story. The carousel auto-scrolls — hover or use the arrows to pause and explore.</p>
+    </div>
+  </div>
+
+  <div class="reviews-track-wrap reveal">
+    <div class="reviews-track" id="reviewsTrack">
+      <!--
+        ⬇️ HOW TO ADD YOUR SCREENSHOTS ⬇️
+        1. Drop your review screenshots into:  artifacts/reiki-website/public/reviews/
+        2. Name them: r1.png, r2.png, r3.png ... (or .jpg / .jpeg / .webp — just match the src below)
+        3. The page will auto-show them. Until then, a soft pink placeholder appears.
+        4. To add MORE than 8 reviews, copy any block below and bump the number.
+        Tip: WhatsApp/Instagram screenshots work beautifully. Portrait or square preferred.
+      -->
+      <!-- ============== ORIGINAL SET (8 reviews) ============== -->
+      <div class="review-card" data-img="rev1.jpeg">
+          <img class="review-img" src="rev1.jpeg" alt="Client review 1" loading="lazy"
+               onload="this.parentElement.classList.remove('placeholder')"
+               onerror="this.parentElement.classList.add('placeholder')">
+          <div class="placeholder-inner">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5L5 21"/></svg>
+            <b>Review #1</b>
+            <span>Drop your screenshot here</span>
+            <code>public/reviews/r1.png</code>
+          </div>
+        </div>
+      <div class="review-card" data-img="rev2.jpeg">
+          <img class="review-img" src="rev2.jpeg" alt="Client review 2" loading="lazy"
+               onload="this.parentElement.classList.remove('placeholder')"
+               onerror="this.parentElement.classList.add('placeholder')">
+          <div class="placeholder-inner">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5L5 21"/></svg>
+            <b>Review #2</b>
+            <span>Drop your screenshot here</span>
+            <code>public/reviews/r2.png</code>
+          </div>
+        </div>
+      <div class="review-card" data-img="rev3.jpeg">
+          <img class="review-img" src="rev3.jpeg" alt="Client review 3" loading="lazy"
+               onload="this.parentElement.classList.remove('placeholder')"
+               onerror="this.parentElement.classList.add('placeholder')">
+          <div class="placeholder-inner">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5L5 21"/></svg>
+            <b>Review #3</b>
+            <span>Drop your screenshot here</span>
+            <code>public/reviews/r3.png</code>
+          </div>
+        </div>
+      <div class="review-card" data-img="rev4.jpeg">
+          <img class="review-img" src="rev4.jpeg" alt="Client review 4" loading="lazy"
+               onload="this.parentElement.classList.remove('placeholder')"
+               onerror="this.parentElement.classList.add('placeholder')">
+          <div class="placeholder-inner">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5L5 21"/></svg>
+            <b>Review #4</b>
+            <span>Drop your screenshot here</span>
+            <code>public/reviews/r4.png</code>
+          </div>
+        </div>
+      <div class="review-card" data-img="rev5.jpeg">
+          <img class="review-img" src="rev5.jpeg" alt="Client review 5" loading="lazy"
+               onload="this.parentElement.classList.remove('placeholder')"
+               onerror="this.parentElement.classList.add('placeholder')">
+          <div class="placeholder-inner">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5L5 21"/></svg>
+            <b>Review #5</b>
+            <span>Drop your screenshot here</span>
+            <code>public/reviews/r5.png</code>
+          </div>
+        </div>
+      <div class="review-card" data-img="rev6.jpeg">
+          <img class="review-img" src="rev6.jpeg" alt="Client review 6" loading="lazy"
+               onload="this.parentElement.classList.remove('placeholder')"
+               onerror="this.parentElement.classList.add('placeholder')">
+          <div class="placeholder-inner">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5L5 21"/></svg>
+            <b>Review #6</b>
+            <span>Drop your screenshot here</span>
+            <code>public/reviews/r6.png</code>
+          </div>
+        </div>
+      <div class="review-card" data-img="rev7.jpeg">
+          <img class="review-img" src="rev7.jpeg" alt="Client review 7" loading="lazy"
+               onload="this.parentElement.classList.remove('placeholder')"
+               onerror="this.parentElement.classList.add('placeholder')">
+          <div class="placeholder-inner">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5L5 21"/></svg>
+            <b>Review #7</b>
+            <span>Drop your screenshot here</span>
+            <code>public/reviews/r7.png</code>
+          </div>
+        </div>
+      <div class="review-card" data-img="rev8.jpeg">
+          <img class="review-img" src="rev8.jpeg" alt="Client review 8" loading="lazy"
+               onload="this.parentElement.classList.remove('placeholder')"
+               onerror="this.parentElement.classList.add('placeholder')">
+          <div class="placeholder-inner">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5L5 21"/></svg>
+            <b>Review #8</b>
+            <span>Drop your screenshot here</span>
+            <code>public/reviews/r8.png</code>
+          </div>
+        </div>
+
+      <!-- ============== DUPLICATE FOR SEAMLESS MARQUEE LOOP ============== -->
+      <div class="review-card" data-img="rev1.jpeg">
+          <img class="review-img" src="rev1.jpeg" alt="Client review 1" loading="lazy"
+               onload="this.parentElement.classList.remove('placeholder')"
+               onerror="this.parentElement.classList.add('placeholder')">
+          <div class="placeholder-inner">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5L5 21"/></svg>
+            <b>Review #1</b>
+            <span>Drop your screenshot here</span>
+            <code>public/reviews/r1.png</code>
+          </div>
+        </div>
+      <div class="review-card" data-img="rev2.jpeg">
+          <img class="review-img" src="rev2.jpeg" alt="Client review 2" loading="lazy"
+               onload="this.parentElement.classList.remove('placeholder')"
+               onerror="this.parentElement.classList.add('placeholder')">
+          <div class="placeholder-inner">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5L5 21"/></svg>
+            <b>Review #2</b>
+            <span>Drop your screenshot here</span>
+            <code>public/reviews/r2.png</code>
+          </div>
+        </div>
+      <div class="review-card" data-img="rev3.jpeg">
+          <img class="review-img" src="rev3.jpeg" alt="Client review 3" loading="lazy"
+               onload="this.parentElement.classList.remove('placeholder')"
+               onerror="this.parentElement.classList.add('placeholder')">
+          <div class="placeholder-inner">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5L5 21"/></svg>
+            <b>Review #3</b>
+            <span>Drop your screenshot here</span>
+            <code>public/reviews/r3.png</code>
+          </div>
+        </div>
+      <div class="review-card" data-img="rev4.jpeg">
+          <img class="review-img" src="rev4.jpeg" alt="Client review 4" loading="lazy"
+               onload="this.parentElement.classList.remove('placeholder')"
+               onerror="this.parentElement.classList.add('placeholder')">
+          <div class="placeholder-inner">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5L5 21"/></svg>
+            <b>Review #4</b>
+            <span>Drop your screenshot here</span>
+            <code>public/reviews/r4.png</code>
+          </div>
+        </div>
+      <div class="review-card" data-img="rev5.jpeg">
+          <img class="review-img" src="rev5.jpeg" alt="Client review 5" loading="lazy"
+               onload="this.parentElement.classList.remove('placeholder')"
+               onerror="this.parentElement.classList.add('placeholder')">
+          <div class="placeholder-inner">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5L5 21"/></svg>
+            <b>Review #5</b>
+            <span>Drop your screenshot here</span>
+            <code>public/reviews/r5.png</code>
+          </div>
+        </div>
+      <div class="review-card" data-img="rev6.jpeg">
+          <img class="review-img" src="rev6.jpeg" alt="Client review 6" loading="lazy"
+               onload="this.parentElement.classList.remove('placeholder')"
+               onerror="this.parentElement.classList.add('placeholder')">
+          <div class="placeholder-inner">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5L5 21"/></svg>
+            <b>Review #6</b>
+            <span>Drop your screenshot here</span>
+            <code>public/reviews/r6.png</code>
+          </div>
+        </div>
+      <div class="review-card" data-img="rev7.jpeg">
+          <img class="review-img" src="rev7.jpeg" alt="Client review 7" loading="lazy"
+               onload="this.parentElement.classList.remove('placeholder')"
+               onerror="this.parentElement.classList.add('placeholder')">
+          <div class="placeholder-inner">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5L5 21"/></svg>
+            <b>Review #7</b>
+            <span>Drop your screenshot here</span>
+            <code>public/reviews/r7.png</code>
+          </div>
+        </div>
+      <div class="review-card" data-img="rev8.jpeg">
+          <img class="review-img" src="rev8.jpeg" alt="Client review 8" loading="lazy"
+               onload="this.parentElement.classList.remove('placeholder')"
+               onerror="this.parentElement.classList.add('placeholder')">
+          <div class="placeholder-inner">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5L5 21"/></svg>
+            <b>Review #8</b>
+            <span>Drop your screenshot here</span>
+            <code>public/reviews/r8.png</code>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <div class="container">
+    <div class="reviews-controls reveal">
+      <button class="rev-arrow" id="revPrev" aria-label="Previous reviews">‹</button>
+      <button class="rev-arrow" id="revNext" aria-label="Next reviews">›</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============== BOOKING / CONTACT ============== -->
+<section id="contact" class="booking">
+  <div class="container">
+    <div class="booking-card reveal">
+      <span class="eyebrow" style="font-size: 0.76rem; letter-spacing: 4px; text-transform: uppercase; color: var(--gold); font-weight: 500;">Begin Your Journey</span>
+      <h3 style="margin-top: 14px;">Ready to Step Into Your Healing?</h3>
+      <p>Reach out directly on WhatsApp — Deepali personally responds to every soul who writes in.</p>
+      <div class="booking-actions">
+        <a href="#" class="btn btn-wa" data-wa="Hi Deepali, I would like to know more about your services.">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.2-.7.1-.2.3-.8.9-1 1.1-.2.2-.4.2-.7.1-.3-.2-1.2-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2.1 3.2 5.1 4.5 1.7.7 2.4.8 3.2.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.4 5L2 22l5.1-1.3c1.4.8 3.1 1.3 4.9 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
+          Chat on WhatsApp
+        </a>
+        <a href="tel:+919810981922" class="btn btn-outline">
+          Call: 98109 81922
+          <span class="btn-arrow">→</span>
+        </a>
+      </div>
+      <div style="margin-top: 28px; font-size: 0.85rem; color: var(--ink-soft);">
+        Or write to: <a href="mailto:deepukh1@gmail.com" style="color: var(--gold); font-weight: 500;">deepukh1@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== FOOTER ============== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="brand">
+          <span class="brand-mark">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5">
+              <path d="M12 2c0 4-3 7-3 10s3 5 3 10c0-5 3-7 3-10s-3-6-3-10z"/>
+              <path d="M2 12c4 0 7 3 10 3s5-3 10-3c-5 0-7-3-10-3s-6 3-10 3z"/>
+            </svg>
+          </span>
+          <span class="brand-text">
+            <small>Cosmic Healer</small>
+            Deepali
+          </span>
+        </a>
+        <p>A sacred space for souls — Reiki, Tarot, Crystal &amp; Bach Flower healing by Deepali Khanna, Reiki Grand Master with 11+ years of devotion.</p>
+        <div class="socials">
+          <a class="social" href="https://www.instagram.com/cosmichealerdeepali?igsh=MW90emJsczg5ODc5Yw==" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4 1.2-.1 1.6-.1 4.8-.1zm0 2.7a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11zm0 1.6a3.9 3.9 0 1 0 0 7.8 3.9 3.9 0 0 0 0-7.8zm5.7-1.8a1.3 1.3 0 1 1 0 2.6 1.3 1.3 0 0 1 0-2.6z"/></svg>
+          </a>
+          <a class="social" href="https://wa.me/919810981922" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.2-.7.1-.2.3-.8.9-1 1.1-.2.2-.4.2-.7.1-.3-.2-1.2-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2.1 3.2 5.1 4.5 1.7.7 2.4.8 3.2.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.4 5L2 22l5.1-1.3c1.4.8 3.1 1.3 4.9 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
+          </a>
+          <a class="social" href="mailto:deepukh1@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24"><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li>
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+919810981922">+91 98109 81922</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+            <a href="mailto:deepukh1@gmail.com">deepukh1@gmail.com</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            <a href="https://wa.me/919810981922" target="_blank" rel="noopener">WhatsApp Direct</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            <a href="https://www.instagram.com/cosmichealerdeepali?igsh=MW90emJsczg5ODc5Yw==" target="_blank" rel="noopener">@cosmichealerdeepali</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#about">About Deepali</a></li>
+          <li><a href="#services">Healing Services</a></li>
+          <li><a href="#courses">Reiki Courses</a></li>
+          <li><a href="#reviews">Sacred Reviews</a></li>
+          <li><a href="#contact">Book a Session</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © 2026 <span>Cosmic Healer Deepali</span> · Crafted with light, love &amp; intention. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<!-- ============== FLOATING WHATSAPP BUTTON ============== -->
+<a href="#" class="float-wa" data-wa="Hi Deepali, I would like to connect for a healing session." aria-label="WhatsApp Deepali">
+  <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.2-.7.1-.2.3-.8.9-1 1.1-.2.2-.4.2-.7.1-.3-.2-1.2-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2.1 3.2 5.1 4.5 1.7.7 2.4.8 3.2.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.4 5L2 22l5.1-1.3c1.4.8 3.1 1.3 4.9 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
+</a>
+
+<!-- ============== REVIEW MODAL ============== -->
+<div class="modal" id="reviewModal">
+  <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+  <div class="modal-content" id="modalContent"></div>
+</div>
+
+<script>
+const PHONE = "919810981922";
+
+/* ============== LOADER ============== */
+const hideLoader = () => document.getElementById('loader').classList.add('hidden');
+window.addEventListener('load', () => setTimeout(hideLoader, 200));
+setTimeout(hideLoader, 700); // safety fallback
+
+/* ============== PARTICLES ============== */
+(function makeParticles() {
+  const wrap = document.getElementById('particles');
+  const count = 36;
+  for (let i = 0; i < count; i++) {
+    const p = document.createElement('span');
+    p.className = 'particle';
+    const size = Math.random() * 8 + 4;
+    p.style.width = p.style.height = size + 'px';
+    p.style.left = Math.random() * 100 + '%';
+    p.style.top = Math.random() * 100 + '%';
+    p.style.animationDelay = (-Math.random() * 14) + 's';
+    p.style.animationDuration = (10 + Math.random() * 10) + 's';
+    p.style.opacity = (0.3 + Math.random() * 0.6).toString();
+    wrap.appendChild(p);
+  }
+})();
+
+/* ============== NAV SCROLL & TOGGLE ============== */
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 30);
+});
+const toggle = document.getElementById('navToggle');
+const navLinks = document.getElementById('navLinks');
+toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+/* ============== REVEAL ON SCROLL ============== */
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      observer.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+// Safety: if user lands via hash on a section, force-reveal that section + neighbors
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    if (location.hash) {
+      const target = document.querySelector(location.hash);
+      if (target) {
+        target.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+        if (target.classList.contains('reveal')) target.classList.add('visible');
+      }
+    }
+  }, 200);
+});
+
+/* ============== WHATSAPP BUTTONS ============== */
+document.querySelectorAll('[data-wa]').forEach(el => {
+  el.addEventListener('click', (e) => {
+    e.preventDefault();
+    const msg = el.getAttribute('data-wa') || 'Hi Deepali';
+    const url = `https://wa.me/${PHONE}?text=${encodeURIComponent(msg)}`;
+    window.open(url, '_blank', 'noopener');
+  });
+});
+
+/* ============== REVIEWS — manual scroll arrows ============== */
+const track = document.getElementById('reviewsTrack');
+const trackWrap = track.parentElement;
+let manualOffset = 0;
+let manualMode = false;
+
+function applyManual() {
+  track.style.animation = 'none';
+  track.style.transform = `translateX(${manualOffset}px)`;
+  manualMode = true;
+  clearTimeout(window.__resumeMarquee);
+  window.__resumeMarquee = setTimeout(() => {
+    // Resume animation from current position
+    track.style.animation = '';
+    track.style.transform = '';
+    manualMode = false;
+    manualOffset = 0;
+  }, 8000);
+}
+
+document.getElementById('revPrev').addEventListener('click', () => {
+  manualOffset += 350;
+  if (manualOffset > 0) manualOffset = 0;
+  applyManual();
+});
+document.getElementById('revNext').addEventListener('click', () => {
+  const max = -(track.scrollWidth / 2);
+  manualOffset -= 350;
+  if (manualOffset < max) manualOffset = max;
+  applyManual();
+});
+
+/* ============== REVIEW MODAL ============== */
+const modal = document.getElementById('reviewModal');
+const modalContent = document.getElementById('modalContent');
+const modalClose = document.getElementById('modalClose');
+
+document.querySelectorAll('.review-card').forEach(card => {
+  card.addEventListener('click', () => {
+    // Don't open modal for empty placeholder cards
+    if (card.classList.contains('placeholder')) return;
+    const img = card.dataset.img;
+    if (!img) return;
+    modalContent.innerHTML = `<img src="${img}" alt="Client review" style="width:100%; height:auto; display:block;">`;
+    modal.classList.add('open');
+  });
+});
+modalClose.addEventListener('click', () => modal.classList.remove('open'));
+modal.addEventListener('click', (e) => { if (e.target === modal) modal.classList.remove('open'); });
+
+/* ============== ABOUT VIDEO PLACEHOLDER CLICK ============== */
+// document.getElementById('videoWrap').addEventListener('click', () => {
+//   // If a real <video> is added later, this becomes optional.
+//   const url = `https://wa.me/${PHONE}?text=${encodeURIComponent("Hi Deepali, I would love to know more about your healing journey.")}`;
+//   window.open(url, '_blank', 'noopener');
+// });
+</script>
+</body>
+</html>
